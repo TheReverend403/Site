@@ -16,6 +16,7 @@ $text-muted: #888;
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic);
 
+/* https://css-tricks.com/centering-css-complete-guide/ */
 @mixin vertical-align($position: absolute) {
 	position: $position;
 	top: 50%;
@@ -23,12 +24,13 @@ $text-muted: #888;
 	transform: translate(-50%, -50%);
 }
 
+/* http://bettermotherfuckingwebsite.com/ */
 body {
 	font-family: $font-stack;
 	background: $primary-bg;
 	margin: 40px auto;
 	max-width: 650px;
-	line-height: 1.2;
+	line-height: 1.4;
 	font-size: $font-size;
 	color: $text-primary;
 	padding: 0 10px;
@@ -57,6 +59,7 @@ small {
 	color: $text-muted;
 }
 
+/* https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/ */
 blockquote {
 	margin: 10px;
 	padding: 10px;
