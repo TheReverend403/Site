@@ -1,0 +1,76 @@
+// VARIABLES {{{
+$primary-bg: #EEE;
+
+$font-size: 1.2em;
+$font-size-menu: 0.8em;
+$font-size-quote: 0.8em;
+
+$text-primary: #444;
+$text-muted: #888;
+
+@mixin vertical-align($position: relative) {
+	position: $position;
+	top: 100%;
+	-webkit-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	transform: translateY(100%);
+}
+
+body {
+	background: $primary-bg;
+	margin: 40px auto;
+	max-width: 650px;
+	line-height: 1.2;
+	font-size: $font-size;
+	color: $text-primary;
+	padding: 0 10px;
+}
+
+h1, h2, h3{
+	line-height: 1.2;
+}
+
+blockquote {
+	margin: 10px;
+	padding: 10px;
+	quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+	color: $text-muted;
+	content: open-quote;
+	font-size: 2em;
+	line-height: 0.1em;
+	margin-right: 0.25em;
+	vertical-align: -0.4em;
+}
+
+blockquote > * {
+	display: inline;
+	font-size: $font-size-quote;
+	color: $text-muted;
+}
+
+.inline-menu {
+	font-size: $font-size-menu;
+
+	&:before {
+		content: '[ ';
+	}
+
+	&:after {
+		content: ' ]';
+	}
+
+	& > * {
+		display: inline;
+	}
+}
+
+.vertical-center {
+	@include vertical-align();
+}
+
+.text-center {
+	text-align: center;
+}
