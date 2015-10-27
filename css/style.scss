@@ -6,15 +6,18 @@ $link-primary-active: #F181AC;
 
 $font-stack: 'Open Sans', sans-serif;
 $font-size: 1.2em;
+$font-size-content: 0.9em;
 $font-size-menu: 0.8em;
 $font-size-quote: 0.8em;
 $font-size-muted: 0.6em;
 
 $text-primary: #444;
 $text-muted: #888;
+
+$border-primary: #CCC;
 // }}}
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700);
 
 // https://css-tricks.com/centering-css-complete-guide/
 @mixin vertical-align($position: absolute) {
@@ -24,20 +27,21 @@ $text-muted: #888;
 	transform: translate(-50%, -50%);
 }
 
-/* http://bettermotherfuckingwebsite.com/ */
 body {
 	font-family: $font-stack;
 	background: $primary-bg;
-	margin: 40px auto;
-	max-width: 650px;
-	line-height: 1.4;
+	line-height: 1.2;
 	font-size: $font-size;
 	color: $text-primary;
-	padding: 0 10px;
 }
 
-h1, h2, h3{
-	line-height: 1.2;
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid $border-primary;
+	margin: 1em 0;
+	padding: 0;
 }
 
 a {
@@ -57,6 +61,16 @@ a {
 small {
 	font-size: $font-size-muted;
 	color: $text-muted;
+}
+
+.content {
+	&-title {
+		font-weight: bold;
+	}
+
+	&-body > * {
+		font-size: $font-size-content;
+	}
 }
 
 /* https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/ */
@@ -100,6 +114,7 @@ blockquote {
 /* https://css-tricks.com/centering-css-complete-guide/ */
 .vertical-center {
 	@include vertical-align();
+	display: inline;
 }
 
 .text-center {
