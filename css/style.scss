@@ -1,6 +1,9 @@
 // VARIABLES {{{
 $primary-bg: #EEE;
 
+$link-primary: #E85B92;
+$link-primary-active: #F181AC;
+
 $font-size: 1.2em;
 $font-size-menu: 0.8em;
 $font-size-quote: 0.8em;
@@ -28,6 +31,20 @@ body {
 
 h1, h2, h3{
 	line-height: 1.2;
+}
+
+a {
+	&:link {
+		color: $link-primary;
+	}
+
+	&:visited {
+		color: $link-primary-active;
+	}
+
+	&:active {
+		color: $link-primary-active;
+	}
 }
 
 blockquote {
