@@ -61,21 +61,21 @@ blockquote {
 	margin: 10px;
 	padding: 10px;
 	quotes: "\201C""\201D""\2018""\2019";
-}
 
-blockquote:before {
-	color: $text-muted;
-	content: open-quote;
-	font-size: 2em;
-	line-height: 0.1em;
-	margin-right: 0.25em;
-	vertical-align: -0.4em;
-}
+	&:before {
+		color: $text-muted;
+		content: open-quote;
+		font-size: 2em;
+		line-height: 0.1em;
+		margin-right: 0.25em;
+		vertical-align: -0.4em;
+	}
 
-blockquote > * {
-	display: inline;
-	font-size: $font-size-quote;
-	color: $text-muted;
+	& > * {
+		display: inline;
+		font-size: $font-size-quote;
+		color: $text-muted;
+	}
 }
 
 .inline-menu {
