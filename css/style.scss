@@ -4,6 +4,7 @@ $primary-bg: #EEE;
 $link-primary: #E85B92;
 $link-primary-active: #F181AC;
 
+$font-stack: 'Open Sans', sans-serif;
 $font-size: 1.2em;
 $font-size-menu: 0.8em;
 $font-size-quote: 0.8em;
@@ -11,6 +12,9 @@ $font-size-muted: 0.6em;
 
 $text-primary: #444;
 $text-muted: #888;
+// }}}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 @mixin vertical-align($position: relative) {
 	position: $position;
@@ -21,6 +25,7 @@ $text-muted: #888;
 }
 
 body {
+	font-family: $font-stack;
 	background: $primary-bg;
 	margin: 40px auto;
 	max-width: 650px;
