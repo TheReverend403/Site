@@ -16,12 +16,11 @@ $text-muted: #888;
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-@mixin vertical-align($position: relative) {
+@mixin vertical-align($position: absolute) {
 	position: $position;
-	top: 100%;
-	-webkit-transform: translateY(100%);
-	-ms-transform: translateY(100%);
-	transform: translateY(100%);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 body {
