@@ -14,9 +14,9 @@ sass:
     style: compressed
 
 compress_html:
-    clippings: [all]
-    comments: [all]
-    endings: [all]
+    clippings: all
+    comments: all
+    endings: all
     profile: false
     ignore:
-        envs: [dev]
+        envs: dev
