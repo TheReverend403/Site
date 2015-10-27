@@ -16,7 +16,7 @@ $text-muted: #888;
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic);
 
-/* https://css-tricks.com/centering-css-complete-guide/ */
+// https://css-tricks.com/centering-css-complete-guide/
 @mixin vertical-align($position: absolute) {
 	position: $position;
 	top: 50%;
@@ -97,6 +97,7 @@ blockquote {
 	}
 }
 
+/* https://css-tricks.com/centering-css-complete-guide/ */
 .vertical-center {
 	@include vertical-align();
 }
