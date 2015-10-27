@@ -12,3 +12,11 @@ keybase_username: thereverend403
 markdown: kramdown
 sass:
     style: compressed
+
+compress_html:
+    clippings: [all]
+    comments: [all]
+    endings: [all]
+    profile: false
+    ignore:
+        envs: [dev]
