@@ -1,0 +1,13 @@
+title: I never was good at creative titles
+email: rev@revthefox.co.uk
+description: >
+  My personal site. No guarantee of coherence.
+baseurl: ""
+url: "https://revthefox.co.uk"
+twitter_username: TheReverend403
+github_username:  TheReverend403
+keybase_username: thereverend403
+
+markdown: kramdown
+sass:
+    style: compressed
