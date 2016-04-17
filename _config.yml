@@ -5,6 +5,7 @@ description: >
   My personal site. No guarantee of coherence.
 baseurl: ""
 url: "https://revthefox.co.uk"
+blog_url: "https:/blog.revthefox.co.uk"
 twitter_username: TheReverend403
 github_username:  TheReverend403
 keybase_username: thereverend403
