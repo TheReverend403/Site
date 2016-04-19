@@ -84,10 +84,10 @@ blockquote {
 	&:before {
 		color: $text-muted;
 		content: '>';
-		font-size: 1.5em;
+		font-size: 1.2em;
 		line-height: 0.1em;
 		margin-right: 0.25em;
-		vertical-align: -0.2em;
+		vertical-align: -0.12em;
 	}
 
 	& > * {
