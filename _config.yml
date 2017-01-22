@@ -10,7 +10,7 @@ twitter_username: TheReverend403
 github_username:  TheReverend403
 keybase_username: thereverend403
 
-keep_files: [.well-known, tg]
+keep_files: [.well-known, tg, files]
 markdown: kramdown
 sass:
     style: compressed
