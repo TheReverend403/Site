@@ -5,25 +5,35 @@ layout: compress
 <!DOCTYPE html>
 <html>
 <head>
-	{% if page.title %}
-		<title>~/{{ page.title }} - {{ site.name }}</title>
-	{% else %}
-		<title>~/{{ site.title }} - {{ site.name }}</title>
-	{% endif %}
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="author" content="Lee Watson <{{ site.email }}>">
-        <meta name="theme-color" content="#E85B92"/>
-	{% if page.description %}
-		<meta name="description" content="{{ page.description }}">
-	{% else %}
-		<meta name="description" content="{{ site.description }}">
-	{% endif %}
-	<link rel="shortcut icon" href="favicon.png" type="image/png">
-	<link rel="stylesheet" href="css/main.css" type="text/css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-59334257-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-59334257-2');
+    </script>
+
+    {% if page.title %}
+            <title>~/{{ page.title }} - {{ site.name }}</title>
+    {% else %}
+            <title>~/{{ site.title }} - {{ site.name }}</title>
+    {% endif %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Lee Watson <{{ site.email }}>">
+    <meta name="theme-color" content="#E85B92"/>
+    {% if page.description %}
+            <meta name="description" content="{{ page.description }}">
+    {% else %}
+            <meta name="description" content="{{ site.description }}">
+    {% endif %}
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
 <body>
-	{{ content }}
+    {{ content }}
 </body>
 </html>
